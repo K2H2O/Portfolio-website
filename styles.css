@@ -1,0 +1,19 @@
+nav{
+    background-color: cadetblue;
+    display: flex;
+    gap: 100 em;
+}
+h1{
+    color: darkblue;
+}
+img{
+    border: 10px solid;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+img:hover{
+    src:"C:\Users\Bophelo\Documents\sandbox\friendly.jpg" ;
+    
+}
