@@ -1,19 +1,165 @@
-nav{
-    background-color: cadetblue;
+html {
+    font-size: 16px; /* Set the base font size */
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #071c24, #2d1114);
+    /*background-color: #071c24;*/
+    color: #fff;
+}
+.cursor,.trail1, .trail2, .trail3, .trail4 {
+    position: fixed;
+    pointer-events: none;
+    border-radius: 50%;
+    /* Adjust size as needed */
+    width: 30px;
+    height: 30px;
+  }
+  
+  .cursor {
+    background-image: url('centre.png'); /* Replace with your cursor image path */
+    background-size: cover;
+  }
+  
+  .trail1, .trail2, .trail3, .trail4{
+    background-image: url('trail.png'); /* Replace with your trail image path */
+    background-size: cover;
+    opacity: 0.5;
+  }
+ 
+#bgvideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-45deg);
+    object-fit: cover;
+    z-index: -1;
+    
+    
+}
+
+header {
     display: flex;
-    gap: 100 em;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    background-color: #105c5a;
 }
-h1{
-    color: darkblue;
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
-img{
-    border: 10px solid;
-    height: 50%;
-    margin-left: auto;
-    margin-right: auto;
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 1.25rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    text-align: center;
+    padding: 3.125rem;
+}
+
+.hero {
+    background-image: url('your-background-image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 31.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3.125rem;
+    margin-bottom: 1.25rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+
+#work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #030809; /* Add this line */
+    padding: 1.25rem; /* Add padding to create some space around the items */
+    
     
 }
-img:hover{
-    src:"C:\Users\Bophelo\Documents\sandbox\friendly.jpg" ;
+
+.workDes {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 1.25rem; 
+    background-color: #105c5a;
+  }
+
+.projectItems {
+    flex: 1;
+    margin: 0.625rem;
+    padding: 1.25rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.3125rem;
+    text-align: center;
+    background-color: #1b0a0c;
     
 }
+#work a img {
+    width: 2.5rem; 
+    height: 2.5rem;
+    margin-left: 0.3125rem; 
+}
+
+#contact {
+    height: 30rem;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(45deg, transparent 50%, black 50%);
+  }
+  
+  #contactVideo {
+    
+    width: 50%;
+    transition:rotation(-45deg);
+    /*object-fit: cover;*/
+    z-index: -1;
+    
+  }
+  
+  .contact-info {
+    width: 50%;
+    text-align: center;
+  }
+  .social-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-links li {
+    margin-bottom: 10px;
+  }
