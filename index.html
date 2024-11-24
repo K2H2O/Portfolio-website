@@ -1,33 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="C:\Users\Bophelo\Documents\sandbox\Portfolio-website\styles.css">
-    <link rel="icon" type="image" href="C:\Users\Bophelo\Documents\sandbox\Cold face.svg">
     <title>My Portfolio</title>
-
-    
+    <link rel="stylesheet" href="style.css"> 
 </head>
-<body>
-    <nav>
-        <a href="http://">Home</a>
-        <a href="http://">About</a>
-        <a href="http://">Contact</a>
-    </nav>
     
+<body>
+    <section 
+     class="cursor"></section>
+     <section class="trail1"></section>
+     <section class="trail2"></section>
+     <section class="trail3"></section>
+     <section class="trail4"></section>
+   
+     <video autoplay muted loop id="bgvideo">
+       <source src="GeoBackground.mp4" type="video/mp4">
+   
+     </video>
+   
+     <header>
+       <section class="logo">PORTFOLIO</section>
+       <nav>
+         <ul>
+           <li><a href="#hero">Home</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#work">Work</a></li>
+           <li><a href="#contact">Contact</a></li>
+         </ul>
+       </nav>
+     </header>
+   
+     <main>
+       <section class="hero">
+         <h1>BOPHELO PHARASI</h1>
+         <p>DEVELOPING SOFTWARE ENGINEER, FRONT END & APP DEVELOPER.</p>
+       </section>
+     </main>
 
+     <section class="about">
+         <h2>About Me</h2>
+         <p>Hi I am Bophelo Pharasi and I am currently living in Johannesburg South Africa. I like learning new things and enjoy the challenge of acquiring new knowledge.</p>
+     </section>
+   
+     <section class="workDes">
+       <h2>My Current and Future Projects</h2>
+       <p>If you can't see anything yet then it means I am still tweaking it or its still on my list. So... Coming Soon...</p>
+   
+       <section id="work">
+   
+         <section class="projectItems">
+           <h3>Project 1</h3>
+           <p>Prediction on stock prices using Machine Learning.</p>
+           <a href="https://github.com/yourusername/project1" target="_blank">
+             <img src="github.png" alt="GitHub">
+           </a>
+         </section>
+         <section class="projectItems">
+           <h3>Project 2</h3>
+           <p>A project that showcases knowledge learnt on Data structures and Design patterns.</p>
+           <a href="https://github.com/yourusername/project2" target="_blank">
+             <img src="CSharp.png" alt="C#">
+           </a>
+         </section>
+         <section class="projectItems">
+           <h3>Project 3</h3>
+           <p>A possible attempt on creating a website application.</p>
+           <a href="https://github.com/yourusername/project3" target="_blank">
+             <img src="react.png" alt="React">
+           </a>
+         </section>
+         <section class="projectItems">
+           <h3>Project 4</h3>
+           <p>I would like to try game development.</p>
+           <a href="https://github.com/yourusername/project4" target="_blank">
+             <img src="unity.png" alt="Unity">
+           </a>
+         </section>
+       </section>
+     </section>
+   
+     <section id="contact">
+   
+       <section>
+   
+       </section>
+   
+       <section class="contact-info">
+         <h2>Contact Me</h2>
+   
+         <ul class="social-links">
+           <li><a href="https://za.linkedin.com/in/bophelo-pharasi-65309318a">LinkedIn</a></li>
+           <li><a href="https://github.com/yourusername">GitHub</a></li>
+         </ul>
+       </section>
+   
+     </section>
 
-    <h1>Portfolio</h1>
-    <h2>Created by myself for myself</h2>
-
-    <img src="C:\Users\Bophelo\Documents\sandbox\Portfolio_Image.jpg" alt="Black girl listening to music">
-    <p>
-        I know I look scary but I promise I don't bite.
-
-    </p>
 </body>
-<footer>
+<script>
+  const cursor = document.querySelector('.cursor');
+  const trail1 = document.querySelector('.trail1');
+  const trail2 = document.querySelector('.trail2');
+  const trail3 = document.querySelector('.trail3');
+  const trail4 = document.querySelector('.trail4');
 
-</footer>
+  document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX - cursor.offsetWidth / 2 + 'px';
+      cursor.style.top = e.clientY - cursor.offsetHeight / 2 + 'px';
+    
+      // Update the trail's position with a delay
+      setTimeout(() => {
+        trail1.style.left = e.clientX - trail1.offsetWidth / 2 + 'px';
+        trail1.style.top = e.clientY - trail1.offsetHeight / 2 + 'px';
+      }, 40);
+
+    setTimeout(() => {
+      trail2.style.left = e.clientX - trail2.offsetWidth / 2 + 'px';
+        trail2.style.top = e.clientY - trail2.offsetHeight / 2 + 'px';
+    }, 80);
+
+    setTimeout(() => {
+      trail3.style.left = e.clientX - trail3.offsetWidth / 2 + 'px';
+        trail3.style.top = e.clientY - trail3.offsetHeight / 2 + 'px';
+    }, 120);
+
+    setTimeout(() => {
+      trail4.style.left = e.clientX - trail4.offsetWidth / 2 + 'px';
+        trail4.style.top = e.clientY - trail4.offsetHeight / 2 + 'px';
+    }, 160);
+      });
+  </script>
 </html>
