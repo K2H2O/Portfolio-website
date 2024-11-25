@@ -3,17 +3,10 @@
     
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css"> 
-</head>
-    
+    <link rel="stylesheet" href="style.css"> </head>
 <body>
-    <section 
-     class="cursor"></section>
-     <section class="trail1"></section>
-     <section class="trail2"></section>
-     <section class="trail3"></section>
-     <section class="trail4"></section>
    
      <video autoplay muted loop id="bgvideo">
        <source src="GeoBackground.mp4" type="video/mp4">
@@ -25,7 +18,7 @@
        <nav>
          <ul>
            <li><a href="#hero">Home</a></li>
-           <li><a href="#">About</a></li>
+           <li><a href="#about">About</a></li>
            <li><a href="#work">Work</a></li>
            <li><a href="#contact">Contact</a></li>
          </ul>
@@ -53,7 +46,7 @@
          <section class="projectItems">
            <h3>Project 1</h3>
            <p>Prediction on stock prices using Machine Learning.</p>
-           <a href="https://github.com/yourusername/project1" target="_blank">
+           <a href="https://github.com/K2H2O/Stock-Prediction" target="_blank">
              <img src="github.png" alt="GitHub">
            </a>
          </section>
@@ -84,7 +77,6 @@
      <section id="contact">
    
        <section>
-   
        </section>
    
        <section class="contact-info">
@@ -99,37 +91,6 @@
      </section>
 
 </body>
-<script>
-  const cursor = document.querySelector('.cursor');
-  const trail1 = document.querySelector('.trail1');
-  const trail2 = document.querySelector('.trail2');
-  const trail3 = document.querySelector('.trail3');
-  const trail4 = document.querySelector('.trail4');
 
-  document.addEventListener('mousemove', (e) => {
-      cursor.style.left = e.clientX - cursor.offsetWidth / 2 + 'px';
-      cursor.style.top = e.clientY - cursor.offsetHeight / 2 + 'px';
-    
-      // Update the trail's position with a delay
-      setTimeout(() => {
-        trail1.style.left = e.clientX - trail1.offsetWidth / 2 + 'px';
-        trail1.style.top = e.clientY - trail1.offsetHeight / 2 + 'px';
-      }, 40);
-
-    setTimeout(() => {
-      trail2.style.left = e.clientX - trail2.offsetWidth / 2 + 'px';
-        trail2.style.top = e.clientY - trail2.offsetHeight / 2 + 'px';
-    }, 80);
-
-    setTimeout(() => {
-      trail3.style.left = e.clientX - trail3.offsetWidth / 2 + 'px';
-        trail3.style.top = e.clientY - trail3.offsetHeight / 2 + 'px';
-    }, 120);
-
-    setTimeout(() => {
-      trail4.style.left = e.clientX - trail4.offsetWidth / 2 + 'px';
-        trail4.style.top = e.clientY - trail4.offsetHeight / 2 + 'px';
-    }, 160);
-      });
-  </script>
 </html>
+
